@@ -5,7 +5,7 @@ $(document).ready(function () {
 var predict = new CoinPredictor();
 predict.Call();
 var pagethread = setInterval(() => {
-    $("#bitcoinrate").html(predict.bitcoinprice);
+    $("#bitcoinrate").html("$"+predict.bitcoinprice);
 console.log(predict.bitcoinprice);
 }, 50);
 
